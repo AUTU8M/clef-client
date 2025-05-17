@@ -1,3 +1,5 @@
+import 'package:client/core/theme/theme.dart';
+import 'package:client/features/auth/view/pages/signup_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,11 +12,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-      ),
-      debugShowCheckedModeBanner: false,
-    );
+        title: 'Flutter Demo',
+        theme: AppTheme.darkThemeMode,
+        debugShowCheckedModeBanner: false,
+        home: const SignupPage());
   }
 }
